@@ -1359,10 +1359,10 @@ public class TchapLoginActivity extends MXCActionBarActivity implements Registra
         final String emailAddress = mLoginEmailTextView.getText().toString().toLowerCase(Locale.ROOT).trim();
         final String password = mLoginPasswordTextView.getText().toString().trim();
 
-        if (!android.util.Patterns.EMAIL_ADDRESS.matcher(emailAddress).matches()) {
-            Toast.makeText(this, getString(R.string.auth_invalid_login_param), Toast.LENGTH_SHORT).show();
-            return;
-        }
+//        if (!android.util.Patterns.EMAIL_ADDRESS.matcher(emailAddress).matches()) {
+//            Toast.makeText(this, getString(R.string.auth_invalid_login_param), Toast.LENGTH_SHORT).show();
+//            return;
+//        }
 
         if (TextUtils.isEmpty(password)) {
             Toast.makeText(this, getString(R.string.auth_invalid_login_param), Toast.LENGTH_SHORT).show();
@@ -1372,47 +1372,53 @@ public class TchapLoginActivity extends MXCActionBarActivity implements Registra
         enableLoadingScreen(true);
 
         Log.d(LOG_TAG, "## onLoginClick()");
-        discoverTchapPlatform(this, emailAddress, new ApiCallback<Platform>() {
-            private void onError(String errorMessage) {
-                Toast.makeText(TchapLoginActivity.this, (null == errorMessage) ? getString(R.string.login_error_unable_login) : errorMessage, Toast.LENGTH_LONG).show();
-                enableLoadingScreen(false);
-            }
 
-            @Override
-            public void onSuccess(Platform platform) {
-                // Check whether the returned platform is valid
-                if (null == platform.hs || platform.hs.isEmpty()) {
-                    // The email owner is not able to create a tchap account,
-                    Log.e(LOG_TAG, "## onLoginClick(): invalid platform");
-                    onError(getString(R.string.login_error_unable_login));
-                    return;
-                }
+        final HomeServerConnectionConfig hsConfig = getHsConfig();
 
-                // Store the platform and the corresponding email to detect changes
-                mTchapPlatform = platform;
-                mCurrentEmail = emailAddress;
+        // Tchap: log in without checking the hs supported flows.
+        login(hsConfig, emailAddress, null, null, password);
 
-                final HomeServerConnectionConfig hsConfig = getHsConfig();
-
-                // Tchap: log in without checking the hs supported flows.
-                login(hsConfig, emailAddress, null, null, password);
-            }
-
-            @Override
-            public void onNetworkError(Exception e) {
-                onError(getString(R.string.login_error_unable_login) + " : " + e.getLocalizedMessage());
-            }
-
-            @Override
-            public void onMatrixError(MatrixError matrixError) {
-                onError(getString(R.string.login_error_unable_login) + " : " + matrixError.getLocalizedMessage());
-            }
-
-            @Override
-            public void onUnexpectedError(Exception e) {
-                onError(getString(R.string.login_error_unable_login) + " : " + e.getLocalizedMessage());
-            }
-        });
+//        discoverTchapPlatform(this, emailAddress, new ApiCallback<Platform>() {
+//            private void onError(String errorMessage) {
+//                Toast.makeText(TchapLoginActivity.this, (null == errorMessage) ? getString(R.string.login_error_unable_login) : errorMessage, Toast.LENGTH_LONG).show();
+//                enableLoadingScreen(false);
+//            }
+//
+//            @Override
+//            public void onSuccess(Platform platform) {
+//                // Check whether the returned platform is valid
+//                if (null == platform.hs || platform.hs.isEmpty()) {
+//                    // The email owner is not able to create a tchap account,
+//                    Log.e(LOG_TAG, "## onLoginClick(): invalid platform");
+//                    onError(getString(R.string.login_error_unable_login));
+//                    return;
+//                }
+//
+//                // Store the platform and the corresponding email to detect changes
+//                mTchapPlatform = platform;
+//                mCurrentEmail = emailAddress;
+//
+//                final HomeServerConnectionConfig hsConfig = getHsConfig();
+//
+//                // Tchap: log in without checking the hs supported flows.
+//                login(hsConfig, "chennai1", null, null, "bahrain@12345");
+//            }
+//
+//            @Override
+//            public void onNetworkError(Exception e) {
+//                onError(getString(R.string.login_error_unable_login) + " : " + e.getLocalizedMessage());
+//            }
+//
+//            @Override
+//            public void onMatrixError(MatrixError matrixError) {
+//                onError(getString(R.string.login_error_unable_login) + " : " + matrixError.getLocalizedMessage());
+//            }
+//
+//            @Override
+//            public void onUnexpectedError(Exception e) {
+//                onError(getString(R.string.login_error_unable_login) + " : " + e.getLocalizedMessage());
+//            }
+//        });
     }
 
     /**
@@ -1835,14 +1841,16 @@ public class TchapLoginActivity extends MXCActionBarActivity implements Registra
      * @return the home server Url according to current tchap platform.
      */
     private String getHomeServerUrl() {
-        return (null != mTchapPlatform && null != mTchapPlatform.hs) ? getString(R.string.server_url_prefix) + mTchapPlatform.hs : null;
+        return "https://matrix.org";
+//        return (null != mTchapPlatform && null != mTchapPlatform.hs) ? getString(R.string.server_url_prefix) + mTchapPlatform.hs : null;
     }
 
     /**
      * @return the identity server URL according to current tchap platform.
      */
     private String getIdentityServerUrl() {
-        return (null != mTchapPlatform && null != mTchapPlatform.hs) ? getString(R.string.server_url_prefix) + mTchapPlatform.hs : null;
+        return "https://matrix.org";
+//        return (null != mTchapPlatform && null != mTchapPlatform.hs) ? getString(R.string.server_url_prefix) + mTchapPlatform.hs : null;
     }
 
     /**
@@ -1871,7 +1879,7 @@ public class TchapLoginActivity extends MXCActionBarActivity implements Registra
             int index = (new Random()).nextInt(currentHosts.size());
             String host = currentHosts.remove(index);
 
-            String idServerUrl = activity.getString(R.string.server_url_prefix) + host;
+            String idServerUrl = "https://matrix.org";
             if (null == currentIdServerUrl || !idServerUrl.equals(currentIdServerUrl)) {
                 idServerUrls.add(idServerUrl);
             }
@@ -1883,7 +1891,7 @@ public class TchapLoginActivity extends MXCActionBarActivity implements Registra
             int index = (new Random()).nextInt(currentHosts.size());
             String host = currentHosts.remove(index);
 
-            String idServerUrl = activity.getString(R.string.server_url_prefix) + host;
+            String idServerUrl = "https://matrix.org";
             if (null == currentIdServerUrl || !idServerUrl.equals(currentIdServerUrl)) {
                 idServerUrls.add(idServerUrl);
             }
