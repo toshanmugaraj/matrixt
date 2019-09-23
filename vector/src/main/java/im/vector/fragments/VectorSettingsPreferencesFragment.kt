@@ -226,9 +226,9 @@ class VectorSettingsPreferencesFragment : PreferenceFragment(), SharedPreference
     private val mNotificationPrivacyPreference by lazy {
         findPreference(PreferencesManager.SETTINGS_NOTIFICATION_PRIVACY_PREFERENCE_KEY)
     }
-    //    private val selectedLanguagePreference by lazy {
-//        findPreference(PreferencesManager.SETTINGS_INTERFACE_LANGUAGE_PREFERENCE_KEY) as VectorCustomActionEditTextPreference
-//    }
+        private val selectedLanguagePreference by lazy {
+        findPreference(PreferencesManager.SETTINGS_INTERFACE_LANGUAGE_PREFERENCE_KEY) as VectorCustomActionEditTextPreference
+    }
     private val textSizePreference by lazy {
         findPreference(PreferencesManager.SETTINGS_INTERFACE_TEXT_SIZE_KEY) as VectorCustomActionEditTextPreference
     }
@@ -382,17 +382,17 @@ class VectorSettingsPreferencesFragment : PreferenceFragment(), SharedPreference
 
         // Themes
         // Disable themes modification settings in Tchap
-//        findPreference(ThemeUtils.APPLICATION_THEME_KEY)
-//                .onPreferenceChangeListener = Preference.OnPreferenceChangeListener { _, newValue ->
-//            if (newValue is String) {
-//                VectorApp.updateApplicationTheme(newValue)
-//                activity.startActivity(activity.intent)
-//                activity.finish()
-//                true
-//            } else {
-//                false
-//            }
-//        }
+        findPreference(ThemeUtils.APPLICATION_THEME_KEY)
+                .onPreferenceChangeListener = Preference.OnPreferenceChangeListener { _, newValue ->
+            if (newValue is String) {
+                VectorApp.updateApplicationTheme(newValue)
+                activity.startActivity(activity.intent)
+                activity.finish()
+                true
+            } else {
+                false
+            }
+        }
 
         // Flair
 //        refreshGroupFlairsList()
@@ -2059,13 +2059,13 @@ class VectorSettingsPreferencesFragment : PreferenceFragment(), SharedPreference
     //==============================================================================================================
 
     private fun setUserInterfacePreferences() {
-//        // Selected language
-//        selectedLanguagePreference.summary = VectorLocale.localeToLocalisedString(VectorLocale.applicationLocale)
-//
-//        selectedLanguagePreference.onPreferenceClickListener = Preference.OnPreferenceClickListener {
-//            startActivityForResult(LanguagePickerActivity.getIntent(activity), REQUEST_LOCALE)
-//            true
-//        }
+        // Selected language
+        selectedLanguagePreference.summary = VectorLocale.localeToLocalisedString(VectorLocale.applicationLocale)
+
+        selectedLanguagePreference.onPreferenceClickListener = Preference.OnPreferenceClickListener {
+            startActivityForResult(LanguagePickerActivity.getIntent(activity), REQUEST_LOCALE)
+            true
+        }
 
         // Text size
         textSizePreference.summary = FontScale.getFontScaleDescription()

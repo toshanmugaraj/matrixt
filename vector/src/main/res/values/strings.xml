@@ -20,7 +20,7 @@
 
     <!-- titles -->
     <string name="title_activity_home">Messages</string>
-    <string name="title_activity_room">Room</string>
+    <string name="title_activity_room">Group</string>
     <string name="title_activity_settings">Settings</string>
     <string name="title_activity_member_details">Member Details</string>
     <string name="title_activity_historical">Historical</string>
@@ -101,7 +101,7 @@
     <string name="bottom_action_home">Home</string>
     <string name="bottom_action_favourites">Favourites</string>
     <string name="bottom_action_people">People</string>
-    <string name="bottom_action_rooms">Rooms</string>
+    <string name="bottom_action_rooms">Groups</string>
     <string name="bottom_action_groups">Communities</string>
 
     <!-- Home screen -->
@@ -122,13 +122,13 @@
     <string name="user_directory_header">User directory</string>
     <string name="matrix_only_filter">Matrix contacts only</string>
     <string name="no_conversation_placeholder">No conversations</string>
-    <string name="no_contact_access_placeholder">You didn\'t allow Tchap to access your local contacts</string>
+    <string name="no_contact_access_placeholder">You didn\'t allow DChat to access your local contacts</string>
     <string name="no_result_placeholder">No results</string>
     <string name="no_email">Email unknown</string>
 
-    <!-- Rooms fragment -->
-    <string name="rooms_header">Rooms</string>
-    <string name="rooms_directory_header">Room directory</string>
+    <!-- Groups fragment -->
+    <string name="rooms_header">Groups</string>
+    <string name="rooms_directory_header">Group directory</string>
     <string name="no_room_placeholder">No rooms</string>
     <string name="no_public_room_placeholder">No public rooms available</string>
     <plurals name="public_room_nb_users">
@@ -160,7 +160,7 @@
     <string name="send_files_in">Send into</string>
     <string name="read_receipt">Read</string>
 
-    <string name="join_room">Join Room</string>
+    <string name="join_room">Join Group</string>
     <string name="username">Username</string>
     <string name="create_account">Register</string>
     <string name="login">Log in</string>
@@ -244,7 +244,7 @@
     <string name="auth_reset_password_email_validation_message">An email has been sent to %s. Once you’ve followed the link it contains, click below.</string>
     <string name="auth_reset_password_error_unauthorized">Failed to verify email address: make sure you clicked the link in the email</string>
     <string name="auth_reset_password_success_message">Your password has been reset.\n\nYou have been logged out of all devices and will no longer receive push notifications. To re-enable notifications, re-log in on each device.</string>
-    <string name="start_message">Welcome to Tchap</string>
+    <string name="start_message">Welcome to DChat</string>
 
     <!-- Login Screen -->
     <string name="login_error_must_start_http">URL must start with http[s]://</string>
@@ -273,7 +273,7 @@
     <string name="e2e_re_request_encryption_key_sent">Key request sent.</string>
 
     <string name="e2e_re_request_encryption_key_dialog_title">Request sent</string>
-    <string name="e2e_re_request_encryption_key_dialog_content">Please launch Tchap on another device that can decrypt the message so it can send the keys to this device.</string>
+    <string name="e2e_re_request_encryption_key_dialog_content">Please launch DChat on another device that can decrypt the message so it can send the keys to this device.</string>
 
     <!-- read receipts list Screen -->
     <string name="read_receipts_list">Read Receipts List</string>
@@ -307,12 +307,12 @@
     <string name="today">Today</string>
 
     <!-- room info dialog Screen -->
-    <string name="room_info_room_name">Room name</string>
-    <string name="room_info_room_topic">Room topic</string>
+    <string name="room_info_room_name">Group name</string>
+    <string name="room_info_room_topic">Group topic</string>
 
     <!-- Call settings screen -->
     <string name="settings_call_category">Calls</string>
-    <string name="settings_call_ringtone_use_riot_ringtone">Use default Tchap ringtone for incoming calls</string>
+    <string name="settings_call_ringtone_use_riot_ringtone">Use default DChat ringtone for incoming calls</string>
     <string name="settings_call_ringtone_title">Incoming call ringtone</string>
     <string name="settings_call_ringtone_dialog_title">Select ringtone for calls:</string>
 
@@ -338,14 +338,14 @@
 
     <!-- permissions Android M -->
     <string name="permissions_rationale_popup_title">Information</string>
-    <string name="permissions_rationale_msg_storage">Tchap needs permission to access your photo and video library to send and save attachments.\n\nPlease allow access on the next pop-up to be able to send files from your phone.</string>
-    <string name="permissions_rationale_msg_camera">Tchap needs permission to access your camera to take pictures and video calls.</string>
+    <string name="permissions_rationale_msg_storage">DChat needs permission to access your photo and video library to send and save attachments.\n\nPlease allow access on the next pop-up to be able to send files from your phone.</string>
+    <string name="permissions_rationale_msg_camera">DChat needs permission to access your camera to take pictures and video calls.</string>
     <string name="permissions_rationale_msg_camera_explanation">\n\nPlease allow access on the next pop-up to be able to make the call.</string>
-    <string name="permissions_rationale_msg_record_audio">Tchap needs permission to access your microphone to perform audio calls.</string>
+    <string name="permissions_rationale_msg_record_audio">DChat needs permission to access your microphone to perform audio calls.</string>
     <string name="permissions_rationale_msg_record_audio_explanation">\n\nPlease allow access on the next pop-up to be able to make the call.</string>
-    <string name="permissions_rationale_msg_camera_and_audio">Tchap needs permission to access your camera and your microphone to perform video calls.\n\nPlease allow access on the next pop-ups to be able to make the call.</string>
-    <string name="permissions_rationale_msg_contacts">Tchap needs permission to access your address book contacts to find other Matrix users based on their email and phone numbers.\n\nPlease allow access on the next pop-up to discover address book users reachable from Tchap.</string>
-    <string name="permissions_msg_contacts_warning_other_androids">Tchap needs permission to access your address book contact to find other Matrix users based on their email and phone numbers.\n\nAllow Tchap to access your contacts ?</string>
+    <string name="permissions_rationale_msg_camera_and_audio">DChat needs permission to access your camera and your microphone to perform video calls.\n\nPlease allow access on the next pop-ups to be able to make the call.</string>
+    <string name="permissions_rationale_msg_contacts">DChat needs permission to access your address book contacts to find other Matrix users based on their email and phone numbers.\n\nPlease allow access on the next pop-up to discover address book users reachable from DChat.</string>
+    <string name="permissions_msg_contacts_warning_other_androids">DChat needs permission to access your address book contact to find other Matrix users based on their email and phone numbers.\n\nAllow DChat to access your contacts ?</string>
 
     <string name="permissions_action_not_performed_missing_permissions">Sorry.. Action not performed, due to missing permissions</string>
 
@@ -362,18 +362,18 @@
     <string name="preview">Preview</string>
     <string name="reject">Reject</string>
 
-    <!-- Room -->
+    <!-- Group -->
     <string name="list_members">List members</string>
     <string name="open_chat_header">Open header</string>
     <string name="room_sync_in_progress">Syncing…</string>
     <string name="room_jump_to_first_unread">Jump to first unread message.</string>
 
-    <!-- Room Preview -->
+    <!-- Group Preview -->
     <string name="room_preview_invitation_format">You have been invited to join this room by %s</string>
     <string name="room_preview_unlinked_email_warning">This invitation was sent to %s, which is not associated with this account.\nYou may wish to login with a different account, or add this email to your this account.</string>
     <string name="room_preview_try_join_an_unknown_room">You are trying to access %s. Would you like to join in order to participate in the discussion?</string>
     <string name="room_preview_try_join_an_unknown_room_default">a room</string>
-    <string name="room_preview_room_interactions_disabled">This is a preview of this room. Room interactions have been disabled.</string>
+    <string name="room_preview_room_interactions_disabled">This is a preview of this room. Group interactions have been disabled.</string>
 
     <!-- Chat creation -->
     <string name="room_creation_title">New Chat</string>
@@ -518,8 +518,8 @@
     <string name="ssl_expected_existing_expl">The certificate has changed from a previously trusted one to one that is not trusted. The server may have renewed its certificate. Contact the server administrator for the expected fingerprint.</string>
     <string name="ssl_only_accept">Only accept the certificate if the server administrator has published a fingerprint that matches the one above.</string>
 
-    <!-- Room Details -->
-    <string name="room_details_title">Room Details</string>
+    <!-- Group Details -->
+    <string name="room_details_title">Group Details</string>
     <string name="room_details_people">People</string>
     <string name="room_details_files">Files</string>
     <string name="room_details_files_title">Shared files</string>
@@ -532,7 +532,7 @@
     <string name="room_details_people_invited_group_name">INVITED</string>
     <string name="room_details_people_present_group_name">JOINED</string>
 
-    <!-- Room events -->
+    <!-- Group events -->
     <string name="room_event_action_report_prompt_reason">Reason for reporting this content</string>
     <string name="room_event_action_report_prompt_ignore_user">Do you want to hide all messages from this user?\n\nNote that this action will restart the app and it may take some time.</string>
     <string name="room_event_action_cancel_upload">Cancel Upload</string>
@@ -542,16 +542,16 @@
     <string name="search_hint">Search</string>
     <string name="search_members_hint">Filter room members</string>
     <string name="search_no_results">No results</string>
-    <string name="tab_title_search_rooms">ROOMS</string>
+    <string name="tab_title_search_rooms">GROUPS</string>
     <string name="tab_title_search_messages">MESSAGES</string>
     <string name="tab_title_search_people">PEOPLE</string>
     <string name="tab_title_search_files">FILES</string>
 
-    <!-- Room recents -->
+    <!-- Group recents -->
     <string name="room_recents_join">JOIN</string>
     <string name="room_recents_directory">DIRECTORY</string>
     <string name="room_recents_favourites">FAVORITES</string>
-    <string name="room_recents_conversations">ROOMS</string>
+    <string name="room_recents_conversations">GROUPS</string>
     <string name="room_recents_low_priority">LOW PRIORITY</string>
     <string name="room_recents_invites">Invites</string>
     <string name="room_recents_start_chat">Start chat</string>
@@ -609,7 +609,7 @@
     <string name="settings_app_info_link_summary">Show the application info in the system settings.</string>
 
     <string name="settings_notification_privacy">Notification privacy</string>
-    <string name="settings_notification_privacy_warning">Tchap runs in the background to keep your notification message content private. You can change this option to reduce battery usage.</string>
+    <string name="settings_notification_privacy_warning">DChat runs in the background to keep your notification message content private. You can change this option to reduce battery usage.</string>
     <string name="settings_notification_privacy_normal">Normal</string>
     <string name="settings_notification_privacy_power_saving">Power-saving Options</string>
     <string name="settings_notification_privacy_low_detail">Low detail notifications</string>
@@ -690,15 +690,15 @@
 
     <!-- startup -->
     <string name="startup_notification_privacy_title">Notification Privacy</string>
-    <string name="startup_notification_privacy_message">Tchap can run in the background to manage your notifications securely and privately. This might affect battery usage.</string>
+    <string name="startup_notification_privacy_message">DChat can run in the background to manage your notifications securely and privately. This might affect battery usage.</string>
     <string name="startup_notification_privacy_button_grant">Grant permission</string>
     <string name="startup_notification_privacy_button_other">Choose another option</string>
 
     <!-- analytics -->
     <string name="settings_analytics">Analytics</string>
     <string name="settings_opt_in_of_analytics">Send analytics data</string>
-    <string name="settings_opt_in_of_analytics_summary">Tchap collects anonymous analytics to allow us to improve the application.</string>
-    <string name="settings_opt_in_of_analytics_prompt">Please enable analytics to help us improve Tchap.</string>
+    <string name="settings_opt_in_of_analytics_summary">DChat collects anonymous analytics to allow us to improve the application.</string>
+    <string name="settings_opt_in_of_analytics_prompt">Please enable analytics to help us improve DChat.</string>
     <string name="settings_opt_in_of_analytics_ok">Yes, I want to help!</string>
 
     <string name="settings_data_save_mode">Data save mode</string>
@@ -771,16 +771,16 @@
     <string name="media_saving_period_1_month">1 month</string>
     <string name="media_saving_period_forever">Forever</string>
 
-    <!-- Room Settings -->
+    <!-- Group Settings -->
 
     <!-- room global settings-->
-    <string name="room_settings_room_photo">Room Photo</string>
-    <string name="room_settings_room_name">Room Name</string>
+    <string name="room_settings_room_photo">Group Photo</string>
+    <string name="room_settings_room_name">Group Name</string>
     <string name="room_settings_topic">Topic</string>
-    <string name="room_settings_room_tag">Room Tag</string>
+    <string name="room_settings_room_tag">Group Tag</string>
     <string name="room_settings_tag_pref_dialog_title">Tagged as:</string>
 
-    <!-- Room settings: Room tag -->
+    <!-- Group settings: Group tag -->
     <string name="room_settings_tag_pref_entry_favourite">Favourite</string>
     <string name="room_settings_tag_pref_entry_low_priority">Low priority</string>
     <string name="room_settings_tag_pref_entry_none">None</string>
@@ -789,24 +789,24 @@
     <string name="room_settings_category_access_visibility_title">Access and visibility</string>
     <string name="room_settings_directory_visibility">List this room in room directory</string>
     <string name="room_settings_room_notifications_title">Notifications</string>
-    <string name="room_settings_room_access_rules_pref_title">Room Access</string>
-    <string name="room_settings_room_read_history_rules_pref_title">Room History Readability</string>
+    <string name="room_settings_room_access_rules_pref_title">Group Access</string>
+    <string name="room_settings_room_read_history_rules_pref_title">Group History Readability</string>
     <string name="room_settings_room_read_history_rules_pref_dialog_title">Who can read history?</string>
     <string name="room_settings_room_access_rules_pref_dialog_title">Who can access this room?</string>
 
-    <!-- Room settings, access and visibility : WHO CAN READ HISTORY? (read rule) -->
+    <!-- Group settings, access and visibility : WHO CAN READ HISTORY? (read rule) -->
     <string name="room_settings_read_history_entry_anyone">Anyone</string>
     <string name="room_settings_read_history_entry_members_only_option_time_shared">Members only (since the point in time of selecting this option)</string>
     <string name="room_settings_read_history_entry_members_only_invited">Members only (since they were invited)</string>
     <string name="room_settings_read_history_entry_members_only_joined">Members only (since they joined)</string>
 
-    <!-- Room settings: "Who can access this room?" (access rule) -->
+    <!-- Group settings: "Who can access this room?" (access rule) -->
     <string name="room_settings_room_access_warning">To link to a room it must have an address.</string>
     <string name="room_settings_room_access_entry_only_invited">Only people who have been invited</string>
     <string name="room_settings_room_access_entry_anyone_with_link_apart_guest">Anyone who knows the room\'s link, apart from guests</string>
     <string name="room_settings_room_access_entry_anyone_with_link_including_guest">Anyone who knows the room\'s link, including guests</string>
 
-    <!-- Room settings: banned users -->
+    <!-- Group settings: banned users -->
     <string name="room_settings_banned_users_title">Banned users</string>
 
     <!-- advanced -->
@@ -821,7 +821,7 @@
     <string name="room_settings_never_send_to_unverified_devices_title">Encrypt to verified devices only</string>
     <string name="room_settings_never_send_to_unverified_devices_summary">Never send encrypted messages to unverified devices in this room from this device.</string>
 
-    <!-- Room settings: advanced addresses -->
+    <!-- Group settings: advanced addresses -->
     <string name="room_settings_addresses_no_local_addresses">This room has no local addresses</string>
     <string name="room_settings_addresses_add_new_address">New address (e.g #foo:matrix.org")</string>
 
@@ -838,8 +838,8 @@
 
     <string name="room_settings_set_main_address">Set as Main Address</string>
     <string name="room_settings_unset_main_address">Unset as Main Address</string>
-    <string name="room_settings_copy_room_id">Copy Room ID</string>
-    <string name="room_settings_copy_room_address">Copy Room Address</string>
+    <string name="room_settings_copy_room_id">Copy Group ID</string>
+    <string name="room_settings_copy_room_address">Copy Group Address</string>
 
     <string name="room_settings_addresses_e2e_enabled">Encryption is enabled in this room.</string>
     <string name="room_settings_addresses_e2e_disabled">Encryption is disabled in this room.</string>
@@ -908,10 +908,10 @@
     <string name="encryption_information_verify_device_warning2">If it matches, press the verify button below. If it doesn\'t, then someone else is intercepting this device and you should probably blacklist it. In the future this verification process will be more sophisticated.</string>
     <string name="encryption_information_verify_key_match">I verify that the keys match</string>
 
-    <string name="e2e_enabling_on_app_update">Tchap now supports end-to-end encryption but you need to log in again to enable it.\n\nYou can do it now or later from the application settings.</string>
+    <string name="e2e_enabling_on_app_update">DChat now supports end-to-end encryption but you need to log in again to enable it.\n\nYou can do it now or later from the application settings.</string>
 
     <!-- unknown devices management -->
-    <string name="unknown_devices_alert_title">Room contains unknown devices</string>
+    <string name="unknown_devices_alert_title">Group contains unknown devices</string>
     <string name="unknown_devices_alert_message">This room contains unknown devices which have not been verified.\nThis means there is no guarantee that the devices belong to the users they claim to.\nWe recommend you go through the verification process for each device before continuing, but you can resend the message without verifying if you prefer.\n\nUnknown devices:</string>
 
     <!-- directory activity  -->
@@ -973,7 +973,7 @@
     <string name="widget_integration_no_permission_in_room">You do not have permission to do that in this room.</string>
     <string name="widget_integration_missing_room_id">Missing room_id in request.</string>
     <string name="widget_integration_missing_user_id">Missing user_id in request.</string>
-    <string name="widget_integration_room_not_visible">Room %s is not visible.</string>
+    <string name="widget_integration_room_not_visible">Group %s is not visible.</string>
     <string name="widget_integration_missing_parameter">A required parameter is missing.</string>
     <string name="widget_integration_invalid_parameter">A parameter is not valid.</string>
     <string name="room_add_matrix_apps">Add Matrix apps</string>
@@ -1038,27 +1038,27 @@
     <string name="tchap_room_creation_unrestricted">Allow the externals to join this room</string>
     <string name="tchap_room_creation_public">Make this room public</string>
     <string name="tchap_room_creation_disable_federation">Limit the access to this room to the members of the domain \"%s\"</string>
-    <string name="tchap_room_creation_public_info">A public room can be joined by any member of the Tchap community, it must not contain any sensitive data.</string>
-    <string name="tchap_room_invite_member_title">Invite contacts in Room</string>
+    <string name="tchap_room_creation_public_info">A public room can be joined by any member of the DChat community, it must not contain any sensitive data.</string>
+    <string name="tchap_room_invite_member_title">Invite contacts in Group</string>
     <string name="tchap_room_invite_member_action">Validate</string>
     <string name="tchap_room_creation_save_avatar_failed">Failed to save picture.\n Do you want to retry?</string>
 
     <!-- tchap new strings -->
     <string name="tchap_room_admin_leave_prompt_msg">Are you sure you want to leave the room?\n\nThe room will no longer be administered, and you may not be able to join it again</string>
-    <string name="tchap_invite_contacts_to_tchap">Invite contacts in Tchap</string>
+    <string name="tchap_invite_contacts_to_tchap">Invite contacts in DChat</string>
     <string name="tchap_invite_contacts_by_email">Invite by email</string>
-    <string name="tchap_invite_contacts_to_room">Invite contacts in Room</string>
+    <string name="tchap_invite_contacts_to_room">Invite contacts in Group</string>
     <string name="tchap_room_invite_member_direct_chat">New discussion</string>
     <string name="tchap_invite_already_send_message">You have already sent an invitation to %s</string>
     <string name="tchap_discussion_already_exist">A discussion with %s already exists</string>
-    <string name="tchap_start_discussion_with_discovered_user">%s already uses Tchap, a discussion has been created with this contact</string>
-    <string name="tchap_invite_unreachable_message">%s cannot be reached for the moment by Tchap</string>
+    <string name="tchap_start_discussion_with_discovered_user">%s already uses DChat, a discussion has been created with this contact</string>
+    <string name="tchap_invite_unreachable_message">%s cannot be reached for the moment by DChat</string>
     <string name="tchap_invite_unauthorized_title_restricted_room">The externals are not allowed to join this room</string>
     <string name="tchap_invite_unauthorized_title_unfederated_room">Only the members of the domain \"%s\" are allowed</string>
     <string name="tchap_invite_unauthorized_message">Unable to send invite to %s</string>
     <string name="tchap_send_invite_failed">Failed to send invitation to %s</string>
     <string name="tchap_send_invite_network_error">Unable to send invite: Network error</string>
-    <string name="tchap_send_invite_confirmation">You will receive a notification when \n your guest joins the Tchap community</string>
+    <string name="tchap_send_invite_confirmation">You will receive a notification when \n your guest joins the DChat community</string>
     <plurals name="tchap_succes_invite_notification">
         <item quantity="one">%d invitation has been sent.</item>
         <item quantity="other">%d invitations have been sent.</item>
@@ -1095,17 +1095,17 @@
     <!-- group details -->
     <string name="group_details_home">Home</string>
     <string name="group_details_people">People</string>
-    <string name="group_details_rooms">Rooms</string>
+    <string name="group_details_rooms">Groups</string>
     <string name="no_users_placeholder">No users</string>
 
-    <!-- Login/Register Tchap -->
-    <string name="tchap_register_title">Sign up to Tchap</string>
-    <string name="tchap_connection_title">Login to Tchap</string>
+    <!-- Login/Register DChat -->
+    <string name="tchap_register_title">Sign up to DChat</string>
+    <string name="tchap_connection_title">Login to DChat</string>
     <string name="tchap_has_account_no">I do not have\nan account</string>
     <string name="tchap_has_account_yes">I already have\nan account</string>
     <string name="tchap_connection_email">Email</string>
     <string name="tchap_connection_email_help">Use your business address</string>
-    <string name="tchap_connection_password">Tchap password</string>
+    <string name="tchap_connection_password">DChat password</string>
     <string name="tchap_connection_password_help">Your password must include a lower-case letter, an upper-case letter, a number and a symbol and be at a minimum 8 characters in length.</string>
     <string name="tchap_connection_password_confirm">Password confirmation</string>
     <string name="tchap_connection_forgotten_email">I have forgotten my password</string>
@@ -1119,9 +1119,9 @@
 
     <string name="tchap_change_password_help">Your new password must include a lower-case letter, an upper-case letter, a number and a symbol and be at a minimum 8 characters in length.</string>
 
-    <string name="tchap_dialog_user_consent_homeserver_name">Tchap</string>
+    <string name="tchap_dialog_user_consent_homeserver_name">DChat</string>
 
-    <string name="rooms">Rooms</string>
+    <string name="rooms">Groups</string>
     <string name="joined">Joined</string>
     <string name="invited">Invited</string>
     <string name="filter_group_members">Filter group members</string>
@@ -1219,7 +1219,7 @@
     <string name="notice_room_third_party_revoked_invite">%1$s revoked the invitation for %2$s to join the room</string>
     <string name="room_error_join_failed_empty_room">It is not currently possible to re-join an empty room.</string>
 
-    <string name="tab_rooms_title">ROOMS</string>
+    <string name="tab_rooms_title">GROUPS</string>
     <string name="tab_contacts_title">CONTACTS</string>
 
     <!--security -->

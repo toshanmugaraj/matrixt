@@ -52,18 +52,18 @@
         android:key="SETTINGS_USER_INTERFACE_KEY"
         android:title="@string/settings_user_interface">
 
-        <!--im.vector.preference.VectorCustomActionEditTextPreference
+        <im.vector.preference.VectorCustomActionEditTextPreference
             android:key="SETTINGS_INTERFACE_LANGUAGE_PREFERENCE_KEY"
             android:title="@string/settings_interface_language"
-            android:dialogTitle="@string/settings_select_language"/-->
+            android:dialogTitle="@string/settings_select_language"/>
 
-        <!-- Themes selection option is disable for Tchap
+<!--        Themes selection option is disable for Tchap-->
         <ListPreference
             android:entries="@array/theme_entries"
             android:entryValues="@array/theme_values"
             android:key="APPLICATION_THEME_KEY"
             android:summary="%s"
-            android:title="@string/settings_theme" />-->
+            android:title="@string/settings_theme" />
 
         <im.vector.preference.VectorCustomActionEditTextPreference
             android:dialogTitle="@string/font_size"

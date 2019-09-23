@@ -7,7 +7,8 @@
 
             <item
                 android:id="@+id/sliding_menu_public_rooms"
-                android:title="@string/tchap_burger_menu_public_rooms" />
+                android:title="@string/tchap_burger_menu_public_rooms"
+                android:visible="false"/>
 
             <item
                 android:id="@+id/sliding_menu_settings"
